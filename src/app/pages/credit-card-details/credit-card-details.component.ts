@@ -4,13 +4,13 @@ import { Store, select } from '@ngrx/store';
 import { AddCreditCard, LoadCreditCardFailure } from '../../store/actions/payment.actions';
 import { take } from 'rxjs/operators';
 import { selectEvent } from 'src/app/store/reducers/payment.reducers';
-
 @Component({
   selector: 'app-credit-card-details',
   templateUrl: './credit-card-details.component.html',
-  styleUrls: ['./credit-card-details.component.scss']
+  styleUrls: ['../../credit-svg.scss','./credit-card-details.component.scss']
 })
 export class CreditCardDetailsComponent implements OnInit {
+  
   mydata = this.store.pipe(take(1), select(selectEvent));
 
   creditCardPayment: any;
@@ -27,7 +27,6 @@ export class CreditCardDetailsComponent implements OnInit {
   validateExpiryDate: boolean = true;
   constructor(private readonly formBuilder: FormBuilder,
     private store: Store
-
   ) { }
 
   ngOnInit() {
@@ -35,7 +34,7 @@ export class CreditCardDetailsComponent implements OnInit {
     this.minMonth = this.getMinimumExpiryDate;
   }
 
-  initializeLoginForm() :void{
+  initializeLoginForm() :void {
     this.creditCardPayment = this.formBuilder.group({
       creditCardNumber: [
         '',
@@ -59,11 +58,11 @@ export class CreditCardDetailsComponent implements OnInit {
     });
   }
 
-  get f() :void {
+  get f()  {
     return this.creditCardPayment.controls;
   }
 
-  checkExpiryDate(): void {
+  checkExpiryDate() : void {
     const expiryDate = this.creditCardPayment.get('expirationDate').value;
     var validateExpiryDate = expiryDate.split('-');
     const getYear = new Date().getFullYear();

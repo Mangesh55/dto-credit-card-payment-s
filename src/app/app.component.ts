@@ -11,14 +11,17 @@ import { selectEvent } from "./store/reducers/payment.reducers";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
+
   isRoot: boolean = false;
   creditCardPayments: ICreditCardPayment[] = [];
   mydata = this.store.pipe(take(1), select(selectEvent));
+
   constructor(private router: Router, private readonly store: Store) {
     this.mydata.subscribe(
       ({ creditCardDetails }) => (this.creditCardPayments = creditCardDetails)
     );
   }
+
   goto() :void {
     this.isRoot = true;
     this.router.navigateByUrl("payment-details");

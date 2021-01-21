@@ -4,15 +4,15 @@ import { ICreditCardPayment } from 'src/app/app.interfaces';
 @Component({
   selector: 'app-card-details',
   templateUrl: './credit-card.component.html',
-  styleUrls: ['./credit-card.component.scss']
+  styleUrls: ['../../credit-svg.scss','./credit-card.component.scss']
 })
 export class CardDetailsComponent {
   @Input() creditPaymentDetails : ICreditCardPayment[] = [];
-  flippedCard : boolean =false
+  flippedCard: boolean = false;
   constructor() { }
 
 
-  flipTheCard() : void{
+  flipTheCard() :void{
     this.flippedCard = !this.flippedCard;
   }
 }
