@@ -14,7 +14,7 @@ export class CreditCardDetailsComponent implements OnInit {
   mydata = this.store.pipe(take(1), select(selectEvent));
 
   creditCardPayment: any;
-  creditCardPaymentDetails: any;
+  creditCardPaymentDetails: string = '';
   submitted: boolean = false;
   cardNumber: string = '';
   cardName: string = "";
@@ -31,12 +31,11 @@ export class CreditCardDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
     this.initializeLoginForm();
     this.minMonth = this.getMinimumExpiryDate;
   }
 
-  initializeLoginForm() {
+  initializeLoginForm() :void{
     this.creditCardPayment = this.formBuilder.group({
       creditCardNumber: [
         '',
@@ -60,7 +59,7 @@ export class CreditCardDetailsComponent implements OnInit {
     });
   }
 
-  get f() {
+  get f() :void {
     return this.creditCardPayment.controls;
   }
 
@@ -88,7 +87,8 @@ export class CreditCardDetailsComponent implements OnInit {
       (data) => { this.creditCardPaymentDetails = data.error },
     );
 
-    // Timeout for showing animations on alert messages.
+    // ************************ DEVELOPER NOTES ************************ //
+    // Timeout is used for showing animations on alert messages.
     setTimeout(() => {
       this.addedCard = false;
       this.creditCardPaymentDetails = '';

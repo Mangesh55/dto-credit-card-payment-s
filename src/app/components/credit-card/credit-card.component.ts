@@ -8,11 +8,11 @@ import { ICreditCardPayment } from 'src/app/app.interfaces';
 })
 export class CardDetailsComponent {
   @Input() creditPaymentDetails : ICreditCardPayment[] = [];
-  flippedCard =false
+  flippedCard : boolean =false
   constructor() { }
 
 
-  flipTheCard() {
+  flipTheCard() : void{
     this.flippedCard = !this.flippedCard;
   }
 }

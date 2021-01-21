@@ -19,7 +19,7 @@ export class AppComponent {
       ({ creditCardDetails }) => (this.creditCardPayments = creditCardDetails)
     );
   }
-  goto() {
+  goto() :void {
     this.isRoot = true;
     this.router.navigateByUrl("payment-details");
   }
