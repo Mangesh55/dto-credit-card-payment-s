@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "dto-credit-card-payments"
+  "defaultProject": "dto-credit-card-payments",
+  "cli": {
+    "analytics": "d7bbb135-81e2-47fb-9d86-86d46765d11f"
+  }
 }

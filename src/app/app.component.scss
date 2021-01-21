@@ -1,0 +1,44 @@
+.button-container{
+    color: white;
+    font-size: 40px;
+    font-family: monospace;
+    margin-top: 5%;
+}
+
+
+  
+  
+  /*Button Three*/
+ 
+  
+.card-container{
+  margin-top: 2%;
+  justify-content: center;
+    display: flex;
+}
+
+.add-card-label{
+  text-align: center;
+  cursor: pointer;
+  font-size:24px;
+  color: #fff;
+  margin: 0 0 0 100px;
+    outline:none;
+    border-radius: 20px;
+    position: relative;
+    background-color: #3d4348;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.add-card-label:hover{
+   background:#fff;
+   box-shadow:0px 2px 10px 5px #97B1BF;
+   color:#000;
+}
