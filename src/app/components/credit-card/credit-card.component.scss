@@ -65,7 +65,7 @@ font-size: 12px;
 
 
 .empty-card{
-    color: white;
+    color: --white-color;
     text-align: center;
     justify-content: center;
     font-size: 27px;
@@ -103,7 +103,7 @@ body {
     margin: 0px;
     margin-left: 17%;
     font-family: system-ui;
-    color: white;
+    color: --white-color;
 }
 
 .credit-container{
@@ -120,7 +120,7 @@ body {
 .payment-title {
     width: 100%;
     text-align: center;
-    color: white;
+    color: --white-color;
 }
 button{
     height: 51px;

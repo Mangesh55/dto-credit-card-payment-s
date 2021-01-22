@@ -32,7 +32,7 @@ button:disabled{
     margin: 0px;
     margin-left: 17%;
     font-family: system-ui;
-    color: white;
+    color: --white-color;
 }
 
 .credit-container{
@@ -48,13 +48,13 @@ button:disabled{
     font-family: sans-serif;
     font-size: 12px;
     top: -5px;
-    text-shadow: 0px 0px white;
+    text-shadow: 0px 0px --white-color;
     position: relative;
 }
 .payment-title {
     width: 100%;
     text-align: center;
-    color: white;
+    color: --white-color;
 }
 button{
     height: 51px;
