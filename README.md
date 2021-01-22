@@ -28,3 +28,7 @@ Following are the some developer setup need for running this project.
 
 ## Gif for refernce 
 ![](DTOCreditCard.gif)
+
+
+## Note 
+# Please use latest chrome version to run the application.
