@@ -145,7 +145,7 @@
             <span class="invalid-input" *ngIf="f.amount.touched  && f.amount.errors && !creditCardPayment.controls.amount.hasError('pattern')">Amount is required </span>
                     <span class="invalid-input" *ngIf="creditCardPayment.controls.amount.hasError('pattern')">Please enter valid amount </span>
         </div>
-            <button type="submit" [disabled]="!creditCardPayment.valid">submit</button>    
+            <button type="submit" [disabled]="!submitted">submit</button>    
     </div>
     
     </form>

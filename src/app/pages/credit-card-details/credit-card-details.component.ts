@@ -58,7 +58,10 @@ export class CreditCardDetailsComponent implements OnInit {
     });
   }
 
-  get f()  {
+  get f() {
+    if (this.creditCardPayment.valid) {
+      this.submitted = true;
+    }
     return this.creditCardPayment.controls;
   }
 
@@ -91,9 +94,9 @@ export class CreditCardDetailsComponent implements OnInit {
     setTimeout(() => {
       this.addedCard = false;
       this.creditCardPaymentDetails = '';
+      this.creditCardPayment.reset();
+      this.submitted = false;
     }, 3000);
-
-
   }
 
   flipCard(event: boolean): void {
