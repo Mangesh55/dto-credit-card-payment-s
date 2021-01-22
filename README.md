@@ -5,12 +5,12 @@
 ## Development notes
 Following are the some developer setup need for running this project.
 
-- Prerequisite Version 
+# Prerequisite Version 
 1. Angular CLI: 11.0.3
 2. Node: 12.0.0
 3. Angular: 11.0.3
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
 
 ## Steps to run the local Repository.
 
