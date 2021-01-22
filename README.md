@@ -27,8 +27,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
-## Following are the coding styles is used :
+## Following are the coding styles is used to build website:
 1. Used `typescript interfaces` for strong types for `variables and parameters`.
 2. Used `RxJS` for store the data(Success/Failure).
 3. Used `Reactive Forms` to get data in form.
 4. Used `access modifiers`, `return types` for variables and functions.
+
+
+## Gif for refernce 
+![](DTOCreditCard.gif)
