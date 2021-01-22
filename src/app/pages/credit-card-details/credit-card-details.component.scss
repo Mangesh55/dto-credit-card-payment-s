@@ -22,9 +22,7 @@ button:disabled{
     cursor: not-allowed;
 }
 
-.added-card{
 
-}
 #credit-card-label{
     width: 300px;
     font-size: 13px;
@@ -32,7 +30,7 @@ button:disabled{
     margin: 0px;
     margin-left: 17%;
     font-family: system-ui;
-    color: --white-color;
+    color: white;
 }
 
 .credit-container{
@@ -131,7 +129,7 @@ input {
     /*margin-left: -125px;*/
     margin: auto;
     background-color: #333;
-    color: --white-color;
+    color: white;
     text-align: center;
     border-radius: 2px;
 
